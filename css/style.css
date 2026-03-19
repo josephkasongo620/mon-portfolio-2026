@@ -1,3 +1,4 @@
+
 :root {
     --violet-doux:#6c63ff;
     --violet-fonce:#534edd;
@@ -7,6 +8,33 @@
     --gris-tres-clair:#f8f8f8;
     --gris-claire:#eee;
 }
-h1 {
-    color: var(--violet-fonce);
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto, sans-serif;   
+    background-color: var(--gris-tres-clair);
+    line-height: 1.6;
+
+}
+header{
+    background-color: white;
+    box-shadow: 2px 6PX 10px rgba(0, 0, 0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+
+}
+header div a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--violet 3rem);
+    
 }
