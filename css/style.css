@@ -39,7 +39,7 @@ header div a{
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    color: var(--violet 3rem);
+    color: var(--violet-doux 3rem);
     
 }
 
@@ -59,9 +59,11 @@ ul  li a{
     position: relative;
     padding: 10px 0;
 }
+
 ul li a:hover {
     color:var(--violet-doux);
 }
+
 ul li a::after{
     content: '';
     position:absolute;
@@ -75,9 +77,56 @@ ul li a::after{
 ul li a:hover::after{
     width: 100% ;
 }
+
 a.active{
     color: var(--violet-doux);
 }
+
 a.active::after{
    width:100%  ; 
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; /*espace horiwontal entre deux chose  */
+    text-align: center;
+    margin: 10rem 2rem;
+}
+
+.hero img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;/* recadre l image*/
+    border-radius: 300px;/*mettre en rond*/
+    border: 8px solid var(--violet-doux);
+}
+.hero h1{
+    color: var(--violet-doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2 rem;
+}
+.hero p{
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+.hero a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease , transform 0.2s ease;
+}
+.hero a:hover{
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
 }
